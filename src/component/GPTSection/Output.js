@@ -5,9 +5,14 @@ export const Output=()=>{
     const {isChatActivate,setIsChatActivate}=useChatVoiceStatus()
     return(
         <>
-        <div className="flex flex-row justify-between h-full w-full">
-            {isChatActivate&&<ChatOutput></ChatOutput>}
-            {!isChatActivate&&<VoiceOutput></VoiceOutput>}
+        <div className="flex flex-col justify-between h-full w-full">
+            <div className="h-[80%] border border-black">
+            <ChatOutput></ChatOutput>
+            </div>
+            <div className="border border-black">
+            <VoiceOutput></VoiceOutput>
+            </div>
+            
         </div>
         </>
     )
