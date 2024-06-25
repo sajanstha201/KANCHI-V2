@@ -7,7 +7,7 @@ export const ChatOutput=()=>{
     console.log(baseUrl)
     console.log(isChatActivate)
     return(
-        <div className="border border-black p-3">
+        <div className="border border-black p-3 w-full">
             <h1>This is chatOutput</h1>
         </div>
     )
