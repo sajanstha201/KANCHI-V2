@@ -4,16 +4,9 @@ import { VoiceInput } from "../Voice/VoiceInput";
 export const Input=()=>{
 
     return(
-        <>
-            <div className="h-full flex flex-row w-full ">
-                <ChatInput></ChatInput>
-                </div>
-                <div>
-                <VoiceInput></VoiceInput>
-                </div>
-                
-                
-            </div>
-        </>
+        <div className="h-full flex flex-row w-full ">
+            <ChatInput/>
+            <VoiceInput/>
+        </div>
     )
 }
