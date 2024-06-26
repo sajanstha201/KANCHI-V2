@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react"
 
 const historyStatusContext=createContext()
 export const HistoryStatusProvider=({children})=>{
-    const [isHistoryHidden,setIsHistoryHidden]=useState(false)
+    const [isHistoryHidden,setIsHistoryHidden]=useState(true)
     return(
         <historyStatusContext.Provider value={{isHistoryHidden,setIsHistoryHidden}}>
             {children}

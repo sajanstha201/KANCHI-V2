@@ -1,7 +1,7 @@
-export const InstanceHistory=()=>{
+export const InstanceHistory=({data})=>{
     return(
-        <>
-        <h1>This is InstanceHistory</h1>
-        </>
+        <div className="bg-gray-600 mb-1">
+        {data}
+        </div>
     )
 }
