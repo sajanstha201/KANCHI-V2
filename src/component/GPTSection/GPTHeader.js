@@ -6,7 +6,7 @@ export const GPTHeader=()=>{
     const {isSideNavbarHidden,setIsSideNavbarHidden}=useSideNavbar()
     return(
         <>
-            {isSideNavbarHidden&&<FontAwesomeIcon icon={faBars} className='mr-3 absolute top-2' onClick={()=>{setIsSideNavbarHidden(!isSideNavbarHidden)}}></FontAwesomeIcon>}
+            {isSideNavbarHidden&&<FontAwesomeIcon size='2x' icon={faBars} className='mr-3 absolute top-2' onClick={()=>{setIsSideNavbarHidden(!isSideNavbarHidden)}}></FontAwesomeIcon>}
             <div className='ml-10'>
                 <p>NepaliGPT</p>
             </div>
