@@ -7,12 +7,13 @@ export const GPTHeader=()=>{
     return(
         <>
             {isHistoryHidden&&<FontAwesomeIcon icon={faBars} className='mr-3 absolute top-2' onClick={()=>{setIsHistoryHidden(!isHistoryHidden)}}></FontAwesomeIcon>}
-            <div className='ml-10'>
+            <div className='flex items-center gap-2 ml-6 '>
+
+                <img src={logoImage} className='h-10 w-14'></img>
                 <p>NepaliGPT</p>
             </div>
-            <div className=" h-[40px] w-[60px] absolute right-0">
-                <img src={logoImage}></img>
-            </div>
+            
+            
         </>
         
     )
