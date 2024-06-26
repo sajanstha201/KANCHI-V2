@@ -1,7 +1,7 @@
 export const ChatInput=()=>{
     return(
-        <div className=" border border-black  w-[90%]">
-        <h1>This is ChatInput</h1>
+        <div className=" w-[90%]" id="chat-input">
+        <input type="text" className="w-[90%] border border-none rounded-lg p-5 my-4 bg-gray-300" placeholder="Type here......"/>
         </div>
     )
 }
