@@ -6,13 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import { ChatVoiceStatusProvider } from './context/ChatVoiceStatusProvider';
 import { Provider } from 'react-redux';
 import { store } from './state/store';
+import { HistoryStatusProvider } from './context/HistoryStatusProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
   <React.StrictMode>
     <ChatVoiceStatusProvider>
-    <App />
+      <HistoryStatusProvider>
+      <App />
+      </HistoryStatusProvider>
     </ChatVoiceStatusProvider>
     </React.StrictMode>
   </Provider>
