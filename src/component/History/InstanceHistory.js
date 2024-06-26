@@ -1,6 +1,7 @@
 export const InstanceHistory=({data})=>{
     return(
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className="bg-gray-600 mb-1">
         {data}
         </div>
@@ -11,6 +12,11 @@ export const InstanceHistory=({data})=>{
         </div>
        
         </>
+>>>>>>> origin/main
+=======
+        <div className="bg-gray-600 mb-1">
+        {data}
+        </div>
 >>>>>>> origin/main
     )
 }
