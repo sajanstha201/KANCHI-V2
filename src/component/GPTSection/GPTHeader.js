@@ -10,9 +10,6 @@ export const GPTHeader=()=>{
             <div className='ml-10'>
                 <p>NepaliGPT</p>
             </div>
-            <div className=" h-[40px] w-[60px] absolute right-0">
-                <img src={logoImage}></img>
-            </div>
         </>
         
     )
