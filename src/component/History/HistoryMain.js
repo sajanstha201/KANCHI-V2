@@ -7,7 +7,7 @@ export const HistoryMain=()=>{
     const {isHistoryHidden,setIsHistoryHidden}=useHistoryStatus()
     const [value,setValue]=useState('hello my name is sajan shrestha. I am from Kathmandu, Nepal.')
     return(
-        <div className={`w-[300px] bg-gray-100 absolute pt-10 md:relative z-10 h-full ${isHistoryHidden?' left-[-500px] w-0':'left-0'} transition-all duration-500 ease-in-out`}>
+        <div className={` bg-gray-100 absolute pt-10 md:relative z-10 h-full ${isHistoryHidden?' w-0 ':' w-[300px]'} transition-all duration-500 ease-in-out`}>
         <FontAwesomeIcon icon={faBars} className="flex absolute right-1 top-1" onClick={()=>{setIsHistoryHidden(!isHistoryHidden)}}></FontAwesomeIcon>
             <InstanceHistory data={value}/>
             <InstanceHistory data={value}/>
