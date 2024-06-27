@@ -17,7 +17,9 @@ export const Output=()=>{
             <div className="border h-[20%] border-black rounded-md">
             <VoiceOutput></VoiceOutput>
             </div>
-            
+            <div className="h-[9a0%] border border-black">
+            <ChatOutput></ChatOutput>
+            </div>
         </div>
         </>
     )
