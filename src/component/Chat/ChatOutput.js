@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 import { useChatVoiceStatus } from "../../context/ChatVoiceStatusProvider"
 
+
 export const ChatOutput=()=>{
     const {isChatActivate,setIsChatActivate}=useChatVoiceStatus()
     const baseUrl=useSelector((state)=>state.baseUrl).backend
@@ -8,7 +9,8 @@ export const ChatOutput=()=>{
     console.log(isChatActivate)
     return(
         <>
-        <h1>This is ChatOuput</h1>
+        <div className={`w-full h-full`} >
+        </div>
         </>
     )
 }

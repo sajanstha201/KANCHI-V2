@@ -7,7 +7,8 @@ export const GPTHeader=()=>{
     return(
         <>
             {isSideNavbarHidden&&<FontAwesomeIcon size='2x' icon={faBars} className='mr-3 absolute top-2' onClick={()=>{setIsSideNavbarHidden(!isSideNavbarHidden)}}></FontAwesomeIcon>}
-            <div className='ml-10'>
+            <div className=' flex items-center gap-2 ml-10'>
+                <img src={logoImage} className='h-10 w-16'></img>
                 <p>NepaliGPT</p>
             </div>
         </>
