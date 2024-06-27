@@ -5,7 +5,7 @@ export const NewUser=()=>{
     return(
         <>
         <div className="h-full flex flex-col justify-between py-6 items-center ">
-
+            
                 <h1 className="text-xl font-semibold"> New chat +</h1>
                 <div className="flex flex-col gap-4 items-center justify-center" >
                             <div className="flex items-center gap-2 bg-cyan-500 shadow-lg shadow-cyan-500/50  px-12 rounded-lg py-2 w-full text-white hover:scale-105 ">

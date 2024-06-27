@@ -7,10 +7,10 @@ export const GPTMain=()=>{
             <div className="flex relative items-center mx-6 h-[10%] z-0">
                 <GPTHeader/>
             </div>
-            <div className='flex h-[70%] border'>
+            <div className='flex h-[75%] border'>
                  <Output></Output>
             </div>
-            <div className='flex h-[20%] border'>
+            <div className='flex h-[15%] border'>
                 <Input></Input>
             </div>
         </>

@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux"
 import { useChatIO, useChatVoiceStatus } from "../../context/ChatVoiceStatusProvider"
+import { VoiceOutput } from "../Voice/VoiceOutput"
 export const ChatOutput=()=>{
     const {isChatActivate,setIsChatActivate}=useChatVoiceStatus()
     const baseUrl=useSelector((state)=>state.baseUrl).backend
@@ -19,13 +20,17 @@ export const ChatOutput=()=>{
         </div>
       </div>
 
-      <div className="pr-32">
- 
-        <div className="px-4 py-1  rounded-2xl bg-white w-fit w-max-5/6 font-semibold">
+      <div className=" flex flex-row ">
+        <div className="px-4 py-1 w-[70%]  rounded-2xl bg-white  w-max-5/6 font-semibold">
         {chatIO.answer}
-
-         </div>
+        
+        </div>
+        <div className="w-[20%] flex items-end p-3">
+          <VoiceOutput />
       </div>
+      </div>
+ 
+      
  </div>
         </>
     )
