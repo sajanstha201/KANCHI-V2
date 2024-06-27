@@ -1,15 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faInfo, faInfoCircle, faLitecoinSign, faMicrophoneLinesSlash, faSignIn, faUser } from "@fortawesome/free-solid-svg-icons";
 import { useState } from 'react';
 import { faMicrophone } from "@fortawesome/free-solid-svg-icons/faMicrophone"
+import { faVolumeMute } from '@fortawesome/free-solid-svg-icons';
+import { faVolumeUp } from '@fortawesome/free-solid-svg-icons';
+
 
 
 export const VoiceOutput=()=>{
-    const [Speaking,setSpeaking]=useState(true)
+    const [speaking,setSpeaking]=useState(true)
     return(
         <>
         
-    {Speaking && <FontAwesomeIcon icon={faMicrophone} size='2x' onClick={()=>setSpeaking(false)}></FontAwesomeIcon>} 
+    {<FontAwesomeIcon  icon={speaking?faVolumeUp :faVolumeMute} size='2x' onClick={()=>setSpeaking(!speaking)}></FontAwesomeIcon>} 
         
         </>
     )
