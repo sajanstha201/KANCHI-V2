@@ -10,9 +10,12 @@ export const SideNavbar=()=>{
         <FontAwesomeIcon icon={faBars} className="flex absolute right-2 top-2" size='2x' onClick={()=>{setIsSideNavbarHidden(!isSideNavbarHidden)}}></FontAwesomeIcon>
        {/**
         * 
-        * <HistoryMain/>
-        */} 
-        <NewUser/>
+        * 
+        * <NewUser/>
+        */}
+        <NewUser/> 
+        <HistoryMain/>
+        
         </div>
     )
 }
