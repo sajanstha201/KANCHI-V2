@@ -6,13 +6,12 @@ export const Output=()=>{
     return(
         <>
         <div className="flex flex-col justify-between h-full w-full">
-            <div className="h-[80%] border border-black">
-            <ChatOutput></ChatOutput>
-            </div>
-            <div className="border h-[20%] border-black">
+        <div className="border h-[10%] border-black">
             <VoiceOutput></VoiceOutput>
             </div>
-            
+            <div className="h-[9a0%] border border-black">
+            <ChatOutput></ChatOutput>
+            </div>
         </div>
         </>
     )
