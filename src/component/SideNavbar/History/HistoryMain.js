@@ -6,22 +6,25 @@ import { faInfoCircle,faCog } from "@fortawesome/free-solid-svg-icons";
 export const HistoryMain=()=>{
     const [value,setValue]=useState('hello my name is sajan shrestha. I am from Kathmandu, Nepal.')
     return(
-        <div className="relative h-full justify-between">    
-        <h1>History section</h1>
-        <InstanceHistory data={value}/>
-        <InstanceHistory data={value}/>
-        <InstanceHistory data={value}/>
-        <div className="absolute bottom-0 w-full flex items-center justify-center flex-col">
-            <div className="flex items-center gap-2 w-full ">
-                <FontAwesomeIcon icon={faCog}/>
-                <h1 className="text-xl font-medium">Setting</h1>
+     <div className="flex h-full justify-between flex-col items-center py-7">    
+        
+            <div>
+
+            <InstanceHistory data={value}/>
+            <InstanceHistory data={value}/>
+            <InstanceHistory data={value}/>
             </div>
-            <div className="flex items-center gap-2 w-full ">
-                <FontAwesomeIcon icon={faInfoCircle}/>
-                <h1 className="text-xl font-medium">About</h1>
+            <div className=" flex items-center justify-center flex-col gap-3">
+                <div className="flex items-center gap-2 w-full ">
+                    <FontAwesomeIcon icon={faCog}/>
+                    <h1 className="text-xl font-medium">Setting</h1>
+                </div>
+                <div className="flex items-center gap-2 w-full ">
+                    <FontAwesomeIcon icon={faInfoCircle}/>
+                    <h1 className="text-xl font-medium">About</h1>
+                </div>
             </div>
-        </div>
-        </div>
+     </div>
 
     )
 }
