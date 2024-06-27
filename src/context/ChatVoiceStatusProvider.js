@@ -4,7 +4,7 @@ const chatIOContext=createContext()
 const voiceIOContext=createContext()
 export const ChatVoiceStatusProvider=({children})=>{
     const [isChatActivate,setIsChatActivate]=useState(true)
-    const [chatIO,setChatIO]=useState({question:'what is you name',answer:'my name is Nepal GPT made by RAN.'})
+    const [chatIO,setChatIO]=useState({question:'what is you name?',answer:`my name is Nepal GPT made by RAN.`})
     const [voiceIO,setVoiceIO]=useState({})
     return(
 

@@ -13,7 +13,6 @@ export const SideNavbar=()=>{
         * 
         * <NewUser/>
         */}
-        <NewUser/> 
         <HistoryMain/>
         
         </div>
