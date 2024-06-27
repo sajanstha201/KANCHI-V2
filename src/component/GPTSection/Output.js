@@ -11,7 +11,7 @@ export const Output=()=>{
         height: '100%',        
         backgroundSize: 'cover',
         backgroundPosition: 'center' }}>
-            <div className="h-[80%] border border-black rounded-md">
+            <div className="h-[80%] border border-black rounded-md overflow-scroll">
             <ChatOutput></ChatOutput>
             </div>
             <div className="border h-[20%] border-black rounded-md">

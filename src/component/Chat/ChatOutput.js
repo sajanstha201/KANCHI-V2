@@ -9,7 +9,7 @@ export const ChatOutput=()=>{
     return(
         <>
         
- <div className="w-full flex flex-col gap-5 p-5 flex-wrap">
+ <div className="w-full flex flex-col gap-5 p-5 flex-wrap overflow-y-scroll">
       <div className="w-full  flex justify-end pl-28 pr-2">
             
         <div className="px-4 py-1 rounded-2xl bg-[#6138B9] w-fit text-white">
