@@ -11,11 +11,8 @@ export const Output=()=>{
         height: '100%',        
         backgroundSize: 'cover',
         backgroundPosition: 'center' }}>
-            <div className="h-[80%] border border-black rounded-md overflow-auto">
+            <div className="h-full rounded-md overflow-auto">
             <ChatOutput></ChatOutput>
-            </div>
-            <div className="border h-[20%] border-black rounded-md">
-            <VoiceOutput></VoiceOutput>
             </div>
         </div>
         </>
