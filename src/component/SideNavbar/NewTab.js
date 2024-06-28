@@ -1,5 +1,7 @@
 export const NewTab=()=>{
     return(
-        <>This is new Tab</>
+        <>
+          <button className="bg-white w-40 rounded-xl py-2 font-semibold text-xl">New Chat +</button>
+        </>
     )
 }
