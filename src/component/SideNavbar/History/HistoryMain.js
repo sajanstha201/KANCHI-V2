@@ -13,16 +13,6 @@ export const HistoryMain=()=>{
             <InstanceHistory data={value}/>
             <InstanceHistory data={value}/>
             </div>
-            <div className=" flex items-center justify-center flex-col gap-3">
-                <div className="flex items-center gap-2 w-full ">
-                    <FontAwesomeIcon icon={faCog}/>
-                    <Link to='/user/setting' className="text-xl font-medium">Setting</Link>
-                </div>
-                <div className="flex items-center gap-2 w-full ">
-                    <FontAwesomeIcon icon={faInfoCircle}/>
-                    <Link  to='/user/about-us' className="text-xl font-medium">About</Link>
-                </div>
-            </div>
      </div>
 
     )
