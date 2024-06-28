@@ -11,7 +11,7 @@ export const VoiceOutput=()=>{
     return(
         <>
         
-    {<FontAwesomeIcon  icon={speaking?faVolumeUp :faVolumeMute} size='2x' onClick={()=>setSpeaking(!speaking)}></FontAwesomeIcon>} 
+    {<FontAwesomeIcon  icon={speaking?faVolumeUp :faVolumeMute} size='2x' onClick={()=>setSpeaking(!speaking)} className='hover:text-blue-700 hover:cursor-pointer'></FontAwesomeIcon>} 
         
         </>
     )
