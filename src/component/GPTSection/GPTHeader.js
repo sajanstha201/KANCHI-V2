@@ -5,6 +5,7 @@ import { useSideNavbar } from '../../context/SideNavbarProvider'
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser'
 import { DropdownButton,Dropdown, Button } from 'react-bootstrap'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 export const GPTHeader=()=>{
     const {isSideNavbarHidden,setIsSideNavbarHidden}=useSideNavbar()
     const [isUserDisplay,setIsUserDisplay]=useState(false)
@@ -22,10 +23,15 @@ export const GPTHeader=()=>{
                 </div>
                 <div>
                     <div className='flex relative flex-col'>
-                        <FontAwesomeIcon icon={faUser} size='2x' className='hover:text-blue-800 hover:cursor-pointer rounded-full' onClick={()=>setIsUserDisplay(!isUserDisplay)} />
+                        <FontAwesomeIcon icon={faUser} size='2x' className='hover:text-blue-800 hover:cursor-pointer rounded-full' 
+                        onClick={()=>{
+                            setIsUserDisplay(!isUserDisplay)
+                            setTimeout(()=>{setIsUserDisplay(false)},3000)
+
+                        }} />
                         <div className={` ${isUserDisplay?'':'hidden'} absolute w-[150px] flex flex-col left-[-120px] top-10 items-start rounded-md bg-gray-100`}>
-                            <div className='w-full  h-[50px] flex items-cener justify-center border rounded-md '>My Profile</div>
-                            <div className='w-full h-[50px] flex items-cener justify-center border rounded-md '>Setting</div>
+                        <Link to='user/profile' className='w-full h-[50px] flex items-center justify-center border rounded-md no-underline text-black font-black'>My Profile</Link>
+                        <Link to='user/setting' className='w-full h-[50px] flex items-center justify-center border rounded-md no-underline text-black font-black'>Setting</Link>
                         </div>
                     </div>
                 </div>
