@@ -7,6 +7,7 @@ import { ChatVoiceStatusProvider } from './context/ChatVoiceStatusProvider';
 import { Provider } from 'react-redux';
 import { store } from './state/store';
 import { SideNavbarProvider } from './context/SideNavbarProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

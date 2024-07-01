@@ -3,8 +3,12 @@ import logoImage from '../../static/images/logo.png'
 import { faBars, faBeer } from '@fortawesome/free-solid-svg-icons'
 import { useSideNavbar } from '../../context/SideNavbarProvider'
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser'
+import { DropdownButton,Dropdown, Button } from 'react-bootstrap'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 export const GPTHeader=()=>{
     const {isSideNavbarHidden,setIsSideNavbarHidden}=useSideNavbar()
+    const [isUserDisplay,setIsUserDisplay]=useState(false)
     return(
         <>
             {isSideNavbarHidden&&<FontAwesomeIcon size='2x' icon={faBars} className='mr-3 absolute top-2' onClick={()=>{setIsSideNavbarHidden(!isSideNavbarHidden)}}></FontAwesomeIcon>}
@@ -14,9 +18,22 @@ export const GPTHeader=()=>{
                     <img src={logoImage} className='h-10 w-16'></img>
                     <p>NepaliGPT</p>
                 </div>
-
                 <div>
-                    <FontAwesomeIcon icon={faUser} size='2x' className='hover:text-blue-800 hover:cursor-pointer'/>
+
+                </div>
+                <div>
+                    <div className='flex relative flex-col'>
+                        <FontAwesomeIcon icon={faUser} size='2x' className='hover:text-blue-800 hover:cursor-pointer rounded-full' 
+                        onClick={()=>{
+                            setIsUserDisplay(!isUserDisplay)
+                            setTimeout(()=>{setIsUserDisplay(false)},3000)
+
+                        }} />
+                        <div className={` ${isUserDisplay?'':'hidden'} absolute w-[150px] flex flex-col left-[-120px] top-10 items-start rounded-md bg-gray-100`}>
+                        <Link to='user/profile' className='w-full h-[50px] flex items-center justify-center border rounded-md no-underline text-black font-black'>My Profile</Link>
+                        <Link to='user/setting' className='w-full h-[50px] flex items-center justify-center border rounded-md no-underline text-black font-black'>Setting</Link>
+                        </div>
+                    </div>
                 </div>
            </div>
         </>
