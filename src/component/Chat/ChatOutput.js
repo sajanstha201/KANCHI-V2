@@ -10,8 +10,8 @@ export const ChatOutput=()=>{
     return(
         <>
         
- <div className="w-full flex flex-col gap-5 p-5 flex-wrap overflow-y-scroll">
-      <div className="w-full  flex justify-end pl-28 pr-2">
+ <div className="w-full flex flex-col gap-5 p-2 flex-wrap overflow-y-scroll">
+      <div className="w-full  flex justify-end pl- pr-2">
             
         <div className="px-4 py-1 rounded-2xl bg-[#6138B9] w-fit text-white">
 
@@ -20,12 +20,12 @@ export const ChatOutput=()=>{
         </div>
       </div>
 
-      <div className=" flex flex-row ">
-        <div className="px-4 py-1 w-[70%]  rounded-2xl bg-white  w-max-5/6 font-semibold">
+      <div className=" flex flex-row w-full">
+        <div className=" rounded-2xl bg-white font-semibold">
         {chatQA.answer}
         
         </div>
-        <div className="w-[20%] flex items-end p-3">
+        <div className=" flex items-end p-3">
           <VoiceOutput />
       </div>
       </div>
