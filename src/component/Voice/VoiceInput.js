@@ -106,10 +106,10 @@ export const VoiceInput = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-[10%]">
             <div
                 id="startRecordButton"
-                className={`flex items-center justify-center w-24 h-24  transition-all duration-1000 ${isRecording ? 'hidden' : 'flex'}`}
+                className={`flex items-center w-24 h-24  transition-all duration-1000 ${isRecording ? 'hidden' : 'flex'}`}
                 onClick={startRecord}
             >
                 <FontAwesomeIcon icon={faMicrophone} className="text-gray-600 text-4xl" />

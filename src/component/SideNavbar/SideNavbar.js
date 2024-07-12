@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 export const SideNavbar=()=>{
     const {isSideNavbarHidden,setIsSideNavbarHidden}=useSideNavbar()
     return(
-        <div className={` bg-gray-100 absolute pt-10 pb-11 md:relative z-10 h-full ${isSideNavbarHidden?' left-[-500px] w-0':'w-[300px] left-0'} transition-all duration-500 ease-in-out`}>
+        <div className={`overflow-auto bg-gray-100 absolute pt-10 pb-11 md:relative z-10 h-full ${isSideNavbarHidden?' left-[-500px] w-0':'w-[300px] left-0'} transition-all duration-500 ease-in-out`}>
             <div >
                 <FontAwesomeIcon icon={faBars} className="flex absolute right-2 top-2" size='2x' onClick={()=>{setIsSideNavbarHidden(!isSideNavbarHidden)}}></FontAwesomeIcon>
             </div>
