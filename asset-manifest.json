@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/KANCHI-V2/static/css/main.fe4a3f0f.css",
+    "main.js": "/KANCHI-V2/static/js/main.e30248c0.js",
+    "static/js/453.c7b71080.chunk.js": "/KANCHI-V2/static/js/453.c7b71080.chunk.js",
+    "static/media/cute-robot-working-laptop-cartoon-vector-icon-illustration-science-technology-isolated-flat.png": "/KANCHI-V2/static/media/cute-robot-working-laptop-cartoon-vector-icon-illustration-science-technology-isolated-flat.304580e9e6797cf83dcb.png",
+    "static/media/bg.png": "/KANCHI-V2/static/media/bg.be2c688a99597437ad9c.png",
+    "static/media/logo.png": "/KANCHI-V2/static/media/logo.ef618393e6241c5963ae.png",
+    "static/media/logo.svg": "/KANCHI-V2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/KANCHI-V2/index.html",
+    "main.fe4a3f0f.css.map": "/KANCHI-V2/static/css/main.fe4a3f0f.css.map",
+    "main.e30248c0.js.map": "/KANCHI-V2/static/js/main.e30248c0.js.map",
+    "453.c7b71080.chunk.js.map": "/KANCHI-V2/static/js/453.c7b71080.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe4a3f0f.css",
+    "static/js/main.e30248c0.js"
+  ]
+}
