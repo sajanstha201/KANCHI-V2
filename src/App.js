@@ -9,7 +9,7 @@ function App() {
     <div className="App h-[100%]">
       <Router>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='' element={<Home/>}/>
           <Route path='/user/setting' element={<SettingMainPage/>}/>
           <Route path='/user/profile' element={<Profile/>}/>
           <Route path='/about-us' element={<AboutUs/>}/>
