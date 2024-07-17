@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import { HashRouter as Router, Route,Routes } from 'react-router-dom';
 import {AboutUs, ContactUs, Help, Home, Profile} from './webpage/index'
 import {ChatInput} from './component/Chat/ChatInput'
 import { SettingMainPage } from './webpage/Setting/SettingMainPage';
